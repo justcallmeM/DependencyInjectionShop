@@ -26,7 +26,7 @@ namespace Library.Utilities
                 Console.SetCursorPosition(0, Console.CursorTop - 2);
                 Console.WriteLine("{0} Items chosen", itemsChosen);
 
-                while (!Int32.TryParse(endInner = Console.ReadLine(), out number) || number > products.Count)
+                while (!Int32.TryParse(endInner = Console.ReadLine(), out number) || number > products.Count-1)
                 {
                     if (endInner == String.Empty)
                     {
