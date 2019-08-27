@@ -10,7 +10,7 @@ namespace Library
         IHand _hand;
         ICart _cart;
 
-        //ctor - tab/tab;
+        //ctor - tab, tab;
         public BusinessLogic(IMarketplace marketplace, IHand hand, ICart cart)
         {
             _marketplace = marketplace;

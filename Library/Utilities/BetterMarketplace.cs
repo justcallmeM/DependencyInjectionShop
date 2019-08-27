@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Library.Utilities
 {
-    class BetterMarketplace : IMarketplace
+    public class BetterMarketplace : IMarketplace
     {
         public List<string> Products()
         {

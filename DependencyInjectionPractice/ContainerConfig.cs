@@ -16,13 +16,9 @@ namespace ConsoleUI
 
             builder.RegisterType<Application>().As<IApplication>();
             builder.RegisterType<BusinessLogic>().As<IBusinessLogic>();
-            builder.RegisterType<Library.Utilities.Marketplace>().As<Library.Utilities.IMarketplace>();
+            builder.RegisterType<Library.Utilities.BetterMarketplace>().As<Library.Utilities.IMarketplace>();
             builder.RegisterType<Library.Utilities.Hand>().As<Library.Utilities.IHand>();
             builder.RegisterType<Library.Utilities.Cart>().As<Library.Utilities.ICart>();
-
-            //builder.RegisterAssemblyTypes(Assembly.Load(nameof(Library)))
-            //    .Where(t => t.Namespace.Contains("Utilities"))
-            //    .As(t => t.GetInterfaces().FirstOrDefault(i => i.Name == "I" + t.Name));
 
             return builder.Build();
         } 

@@ -16,7 +16,7 @@ namespace Library.Utilities
             Console.WriteLine("Choose products that you'd like to buy:\n");
             foreach(var item in products)
             {
-                Console.WriteLine("{0}: {1} {2}", counter, item, Environment.NewLine);
+                Console.WriteLine($"{counter}: {item} \n");
                 counter++;
             }
             Console.WriteLine(Environment.NewLine);
@@ -24,7 +24,7 @@ namespace Library.Utilities
             while (continueOuter)
             {
                 Console.SetCursorPosition(0, Console.CursorTop - 2);
-                Console.WriteLine("{0} Items chosen", itemsChosen);
+                Console.WriteLine($"{itemsChosen} Items chosen");
 
                 while (!Int32.TryParse(endInner = Console.ReadLine(), out number) || number > products.Count-1)
                 {
